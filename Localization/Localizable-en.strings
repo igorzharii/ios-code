@@ -1,0 +1,39 @@
+// MARK: Global
+"ok" = "Ok";
+"no" = "No";
+"cancel" = "Cancel";
+"day_string" = "d";
+
+
+// MARK: Room list screen
+"search" = "Search";
+
+
+// MARK: Room details screen
+"history" = "History";
+
+
+// MARK: DJ list screen
+"lists" = "Lists";
+
+
+// MARK: Playlist screen
+"added" = "Added";
+
+
+// MARK: Create room screen
+"couldnt_create" = "Couldn't create room";
+
+
+// MARK: Auth screen
+"login_reason" = "To create rooms, view profile, message friends, or become DJ please login";
+"logged_in" = "Logged in with:";
+
+
+// MARK: Alerts
+"logging_in" = "Logging in...";
+"something_went_wrong" = "Something went wrong";
+
+
+//MARK: Internet Connection
+"please_check_your_connection" = "Please check your Internet Connection";

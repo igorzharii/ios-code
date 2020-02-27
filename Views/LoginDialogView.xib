@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JI3-gM-XBO" userLabel="Card View" customClass="LoginDialogView" customModule="TurnTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIr-FC-50b">
+                    <rect key="frame" x="20" y="20" width="560" height="39"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mo8-77-vmA">
+                    <rect key="frame" x="175" y="69" width="110" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="C82-8i-QMg"/>
+                        <constraint firstAttribute="height" constant="40" id="SuL-rC-yo2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Google"/>
+                    <connections>
+                        <action selector="loginGoogle" destination="JI3-gM-XBO" eventType="touchUpInside" id="1M9-7X-JcS"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="kyG-Cr-tJG">
+                    <rect key="frame" x="193" y="79" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Jll-cg-s9p"/>
+                        <constraint firstAttribute="height" constant="20" id="gdb-Ac-fYg"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5SK-Bd-Tof">
+                    <rect key="frame" x="290" y="79" width="20" height="20"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXX-Q4-xU6">
+                    <rect key="frame" x="315" y="69" width="110" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="1pq-Gy-xDk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Facebook">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginFacebook" destination="JI3-gM-XBO" eventType="touchUpInside" id="omG-o6-t93"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="2Sr-8j-RKa">
+                    <rect key="frame" x="321" y="79" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Mnq-Kd-PXF"/>
+                        <constraint firstAttribute="width" constant="20" id="s45-LP-JMX"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FXX-Q4-xU6" firstAttribute="leading" secondItem="5SK-Bd-Tof" secondAttribute="trailing" constant="5" id="6r1-YB-Grl"/>
+                <constraint firstItem="kyG-Cr-tJG" firstAttribute="centerY" secondItem="Mo8-77-vmA" secondAttribute="centerY" id="9vO-QJ-7PD"/>
+                <constraint firstItem="5SK-Bd-Tof" firstAttribute="leading" secondItem="Mo8-77-vmA" secondAttribute="trailing" constant="5" id="BVl-TG-lqO"/>
+                <constraint firstItem="5SK-Bd-Tof" firstAttribute="centerX" secondItem="JI3-gM-XBO" secondAttribute="centerX" id="JWJ-Fi-iIS"/>
+                <constraint firstAttribute="trailing" secondItem="kIr-FC-50b" secondAttribute="trailing" constant="20" id="QKm-In-kQS"/>
+                <constraint firstItem="kIr-FC-50b" firstAttribute="top" secondItem="JI3-gM-XBO" secondAttribute="top" constant="20" id="Ws0-1h-trd"/>
+                <constraint firstItem="5SK-Bd-Tof" firstAttribute="top" secondItem="kIr-FC-50b" secondAttribute="bottom" constant="20" id="Xuj-Su-aoH"/>
+                <constraint firstItem="2Sr-8j-RKa" firstAttribute="centerY" secondItem="FXX-Q4-xU6" secondAttribute="centerY" id="cQa-Ia-cNo"/>
+                <constraint firstItem="kyG-Cr-tJG" firstAttribute="leading" secondItem="Mo8-77-vmA" secondAttribute="leading" constant="18" id="e5q-Fa-gd7"/>
+                <constraint firstItem="FXX-Q4-xU6" firstAttribute="height" secondItem="Mo8-77-vmA" secondAttribute="height" id="g18-Ce-zUi"/>
+                <constraint firstItem="2Sr-8j-RKa" firstAttribute="leading" secondItem="FXX-Q4-xU6" secondAttribute="leading" constant="6" id="m99-sf-b3n"/>
+                <constraint firstItem="Mo8-77-vmA" firstAttribute="top" secondItem="kIr-FC-50b" secondAttribute="bottom" constant="10" id="r24-i8-b40"/>
+                <constraint firstAttribute="bottom" secondItem="Mo8-77-vmA" secondAttribute="bottom" constant="20" id="rm1-4c-9bN"/>
+                <constraint firstItem="kIr-FC-50b" firstAttribute="leading" secondItem="JI3-gM-XBO" secondAttribute="leading" constant="20" id="sce-kc-br6"/>
+                <constraint firstItem="FXX-Q4-xU6" firstAttribute="centerY" secondItem="Mo8-77-vmA" secondAttribute="centerY" id="xQY-qj-sOs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="bounceAnimationOffset">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="facebookImage" destination="2Sr-8j-RKa" id="pon-qq-Gyr"/>
+                <outlet property="facebookSignInButton" destination="FXX-Q4-xU6" id="DDe-sU-hSI"/>
+                <outlet property="googleImage" destination="kyG-Cr-tJG" id="eOO-fM-WKW"/>
+                <outlet property="googleSignInButton" destination="Mo8-77-vmA" id="21a-lz-wDK"/>
+                <outlet property="loginIndicator" destination="5SK-Bd-Tof" id="hbK-ub-FIU"/>
+                <outlet property="loginReasonLabel" destination="kIr-FC-50b" id="Ymy-ah-lE4"/>
+            </connections>
+            <point key="canvasLocation" x="304" y="654.42278860569718"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="facebook" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="google" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>
